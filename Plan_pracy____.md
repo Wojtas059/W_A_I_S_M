@@ -4,7 +4,6 @@ Wojciech Maj
 
 ### Cel pracy:
 Wywtorzenie aplikacji, która będzie parsować kod Pythona i wytwarzać do niego komentarze. Efektem tej operacji ma być plik zawierający dokumentację pythona.
-Aplikacja została wytworzona z wykorzystaniem biblioteki standardowej pythona w wersji 3.9 oraz moduł dostarczający implementacje kolejek. Całość jest rozwiązaniem autorskim. Bazuje na kaskadzie wyrażeń warunkowych, które odpowiednie wysterowują treść komentarza. Plik wynikiowy jest połączeniem źródła kodu oraz wygenerowanych komentarzy. 
 
 ### Pojęcia:
  * klasa(słowo kluczowe class) - kontener na zminne oraz fukcje(metody) służące określonym zadaniom charakterystyczym dla posiadanych  właściwości
@@ -33,8 +32,16 @@ Aplikacja została wytworzona z wykorzystaniem biblioteki standardowej pythona w
 *  : - następna linia może zawierać wcięcie 
 *  pętle - narzędzie iteracji
 
+### Plan pracy:
 
-#### Prezentacja działania kodu 
+Plan pracy:
+1. Wywtorzenie funkcji do otwierania i zamykania pliku wynikowego.
+2. Wytworzenie funkcji dla aplikacji, które będą dokumentować proste funckje.
+3. Wytworzenie funkcji do dokumentowania pętli.
+4. Wytworzenie funkcji do dokumentowania warunków.
+5. Wytworzenie funkcji do dokumentowania wątków.
+6. Wytworzenie funkcji do dokumentowania zmiennych.
+7. Wytworzenie funkcji do dokumentowania klas.
 
 
 
@@ -79,7 +86,7 @@ Powyższa funkcja jest odpowiedzialna za dodawanie komentarzy odnośnych definic
 
 <img src="com_przyklad.png">
 
-Zaprezentowano także dodanie komentarzy generowanych do komentarzy programisty 
+Zaprezentowano także dodanie komentarzy odnośnych komentarzy programisty 
 
 
 ```py
@@ -151,5 +158,5 @@ if "logging." in dataarray[0]:
 ```
 <img src="com_logging.png">
 
-Komentarz odnośnie występowanie tzw. Loggów, które są odpowiedzialne za wypisanie w konsoli informacji, lepiej widocznych niż tych z wykorzystniem funkcji print.
+Komentarz odnośny wystąpnienia tzw. Loggów, które są odpowiedzialne za wyrzucenie w konsoli dannej, są przez to lepiej widoczne niż zwykły print.
 Dodatkowo można wyświetlić logging.error, który podświetlany jest na czerwono co znacznie pomaga z zauważeniem.
