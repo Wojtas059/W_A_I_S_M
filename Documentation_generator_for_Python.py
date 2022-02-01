@@ -10,7 +10,7 @@ csvQueue=queue.Queue()
 file_write=queue.Queue()
 q1 = queue.LifoQueue()
 def line_queqe():
-    file = open("next.py")
+    file = open("<NAZWA PLIKU DO KTÓREGO CHCEMY DODAĆ KOMENTARZE>.py")
     for line in file:
         csvQueue.put_nowait(str(line))
     file.close
@@ -82,7 +82,7 @@ def spr_tab():
         file_write.put_nowait(line)
         #print(dataarray)
     print('Zakonczylem sprawdzanie')
-    file = open("python__next.py", "w", encoding="utf-8")
+    file = open("<NAZWA PLIKU DO KTÓREGO CHCEMY DODAĆ KOMENTARZE>_documentation.py", "w", encoding="utf-8")
     while(file_write.qsize( )>0 ):
         file.write(file_write.get_nowait())
         
